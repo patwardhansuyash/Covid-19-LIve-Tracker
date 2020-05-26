@@ -1,0 +1,311 @@
+/* No CSS */
+/* No CSS */
+body {
+  overflow-x: hidden;
+  background-color: white;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#navx {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bodydark {
+  background-color: black;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+}
+
+#state {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+}
+
+#statem {
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+}
+
+.statexyz {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  color: red;
+}
+
+#statem:hover {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+}
+
+.container {
+  margin: auto;
+}
+
+.btn {
+  margin: auto;
+  width: 180px;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+}
+
+#srchbox {
+  max-width: 320px;
+  margin: auto;
+  padding: 20px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#searchb {
+  background-color: red;
+  padding: 7px 20px;
+  color: white;
+  border: none;
+  margin: auto;
+}
+
+@-webkit-keyframes countryfade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes countryfade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes notifyfade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes notifyfade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@media (max-width: 1020px) {
+  #searchb {
+    background-color: red;
+    padding: 7px 20px;
+    color: white;
+    border: none;
+    margin: auto;
+    margin-top: 10px;
+  }
+  #state {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: green;
+    padding: 10px 50px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  #state {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: ease-in-out .5s;
+    transition: ease-in-out .5s;
+  }
+}
+
+#map {
+  height: 100px;
+  width: 100px;
+  float: right;
+}
+
+#alert {
+  margin-left: auto;
+}
+
+#navbtns {
+  position: fixed;
+}
+
+#links {
+  background-color: #2C3335;
+  position: fixed;
+  color: white;
+  top: 0px;
+  z-index: 1;
+  min-height: 200vh;
+  width: 30vh;
+  -webkit-transform: translateX(65px);
+          transform: translateX(65px);
+}
+
+#links li {
+  list-style: none;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: -60px;
+  padding: auto;
+  padding-top: 70px;
+}
+
+#links li .text {
+  color: white;
+}
+
+nav {
+  z-index: 2;
+}
+
+.bodyactive {
+  -webkit-transform: translateX(-203px);
+          transform: translateX(-203px);
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+}
+
+#gotop {
+  background-color: red;
+  padding: 20px 20px;
+  color: white;
+  border: none;
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  margin-top: 10px;
+  position: fixed;
+  right: 12px;
+  bottom: 15px;
+  z-index: 2;
+  border-radius: 50%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+}
+
+.statewise {
+  list-style: none;
+}
+
+.high {
+  color: red;
+}
+
+@-webkit-keyframes change {
+  25% {
+    color: blue;
+  }
+}
+
+@keyframes change {
+  25% {
+    color: blue;
+  }
+}
+/*# sourceMappingURL=style.css.map */
