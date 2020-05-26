@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Stats</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="bootstrap.min (5).css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="manifest" href="/manifest.json">
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+    
+</head>
+<body>
+    <nav id="navx" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Covid-19 India</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <div id="navbtns">
+            <ul id="links">
+              <li><a class="text"  href="index.html">Home</a></li>
+              <li><a class="text" href="index.html">Demographics</a></li>
+              <li><a class="text"  href="index.html">Essentials</a></li>
+              <li><a class="text" href="about.html">About</a></li>
+            </ul>
+          </div>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Demographics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Essentials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+        
+      </nav>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+      </div>
+      <div  id="lights"  class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+        <label id="light" class="custom-control-label" for="customSwitch1">Lights OFF</label>
+      </div>
+      <div id="lastupd" style="display: none;"></div>
+      <br>
+<div id="country"></div>
+<div id="homeie"></div>
+<br>
+<form id="srchbox"  class="form-inline my-2 my-lg-0">
+  <input id="searcht" class="form-control mr-sm-2" type="text" placeholder="Search State">
+  <a id="searchb" href="">Search</a>
+</form>
+ <div class="text-center">
+  <button style="display: none;" id="btn" type="button" class="btn btn-primary">Show Statewise</button>
+ </div>
+ <br>
+<br>
+ <ul id="state"></ul>
+ 
+ <br>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script> 
+  <script src="Covid.js"></script>
+  <script src="UI.js"></script>
+  <script src="App.js"></script>
+</body>
+</html>
