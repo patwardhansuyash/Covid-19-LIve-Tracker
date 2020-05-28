@@ -43,7 +43,7 @@
     "display": "standalone",
     "orientation": "portrait-primary",
     "background_color": "#fff",
-    "theme_color": "#fff",
+    "theme_color": "#4C4B4B",
     "description": "Get Live Covid-19 stats.",
     "dir": "ltr",
     "lang": "en-US"
